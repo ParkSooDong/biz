@@ -1,4 +1,3 @@
-
   
 <!DOCTYPE html>
 <html>
@@ -19,7 +18,7 @@
 
 	.content {
   grid-area: content;
-  border-left: 1px solid rgb(255,165,0);
+  border-left: 1px solid rgb(050, 205, 050);
 	}
 
 	.header {
@@ -31,26 +30,26 @@
 	}
 
 	.wrapper {
-  color: rgb(51, 51, 51); padding-top: 0px; font-size: 12px;
+  padding-top: 0px; font-size: 12px;
 
 	}
 
   .wrapper {
 	display: grid;
 	grid-gap: 0px;
-	grid-template-columns: 100px 350px;
+	grid-template-columns: 100px auto;
 	grid-template-areas:
   "header  header"
   "sidebar content"
   "footer  footer";
-	max-width: 450px;
-  background-color: rgb(255,255,204);
+	max-width: 445px;
   padding: 10px;
   border-radius: 10px;
+  background-color: rgb(220, 220, 220);
   }
 
   .box {
-  color: rgb(128, 0, 128); padding-top: 0px; font-size: 13px;
+  color: rgb(0,0,0); padding-top: 0px; font-size: 13px;
 	border-radius: 5px;
 	padding: 10px;
 	padding-top: 0px;
@@ -60,14 +59,15 @@
 	font-size: 10pt;
 	}
 
-  .header, .footer {
-  background-color: rgb(255,165,0);
-  text-align: left; font-family: Verdana; font-size: 13px;
-	}
+  .header {
+  background-color: rgb(211, 211, 211);
+  text-align: left; font-family: Verdana; font-size: 13px; }
+
+  .footer {
+  background-color: rgb(192, 192, 192);
+  text-align: left; font-family: Verdana; font-size: 13px; }
 
   </style>
-
-
 
 <div class="wrapper">
   <div class="box header"><a href="http://www.petclub.co.kr/" target="_blank" style="font-family: Verdana; font-size: 13px;">
@@ -80,19 +80,17 @@
 
   <div class="box content">
 	<p>Park, Soo-Dong
+	<br>web : <a href="https://parksoodong.github.io/biz/" style="font-size: 10pt;" target="_blank">https://parksoodong.github.io/biz/</a>
 	<br>e-mail : <a href="mailto:soodonglove@nate.com" target="_blank" rel="noopener noreferrer"> soodonglove@nate.com</a>
 	<br>mobile : 010-6435-5800
-	</p>
-  </div>
+  </p></div>
 
   <div class="box footer">
 	<p>회사 주소지 :&nbsp;12245 경기도 남양주시 경강로 134-10 (이패동 562-2)
 	<br>회사 직통전화 :070-4675-2295 (09:00~19:00)
-	<br>부서 및 직위 : 전산부 대리
-	</p>
+	<br>부서 및 직위 : 경리관리부 대리, 전산업무</p>
   </div>
  </div>
-
 
 <p style="font-size:20px;color:green;">
 <br>박수동입니다.
@@ -100,12 +98,5 @@
 <br>연락이 필요하시면 메일을 보내주시기 바랍니다.
 </p>
 </html>
-
-
-
-
-
-
-
 
 
