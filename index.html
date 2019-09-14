@@ -33,6 +33,48 @@
 }
 </style>
 </head>
+ <script>
+function startTime() {
+  var today = new Date();
+  var yy = today.getYear() + 1900;
+  var mm = today.getMonth() + 1;
+  var dd = today.getDate();
+  var yoil = checkyoil(today.getDay());
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+
+  var strDate1 = "2017-6-15";
+  var arr1 = strDate1.split('-');
+  var dat1 = new Date(arr1[0], arr1[1], arr1[2]);
+  var dat2 = new Date(yy, mm, dd, h, m, s);
+     
+  var diff = dat2 - dat1;
+  var currDay = 24 * 60 * 60 * 1000;
+  var currMonth = currDay * 30;
+  var currYear = currMonth * 12;
+  var diffDay = parseInt((diff / currDay) + 1);
+  var diffHour = parseInt(diff / 3600000);  
+
+  document.getElementById('txt').innerHTML =
+  yy + ". " + mm + ". " + dd + "." + yoil + " "
+   + h + ":" + m + ":" + s
+   + " 현재 " + diffDay + "일(" + diffHour + "시간)째 在職중인 곳의 제 명함 상세설명 페이지입니다.";
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+function checkyoil(i) {
+  var week = ['일', '월', '화', '수', '목', '금', '토'];
+  var dayOfWeek = week[i];
+  return dayOfWeek;
+}
+</script>
+<body onload="startTime()">
 	
 <img src="https://avatars1.githubusercontent.com/u/45248034?s=460&v=4"
 <br>
