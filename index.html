@@ -32,7 +32,6 @@
 	text-align : justify;
 }
 </style>
-</head>
  <script>
 function startTime() {
   var today = new Date();
@@ -59,9 +58,9 @@ function startTime() {
   var diffHour = parseInt(diff / 3600000);  
 
   document.getElementById('txt').innerHTML =
-  yy + ". " + mm + ". " + dd + "." + yoil + " "
+  "저는 " + yy + ". " + mm + ". " + dd + "." + yoil + " "
    + h + ":" + m + ":" + s
-   + " 현재 " + diffDay + "일(" + diffHour + "시간)째 在職중인 곳의 제 명함 상세설명 페이지입니다.";
+   + " 현재 " + diffDay + "일(" + diffHour + "시간)째 在職중입니다.";
   var t = setTimeout(startTime, 500);
 }
 function checkTime(i) {
@@ -74,8 +73,10 @@ function checkyoil(i) {
   return dayOfWeek;
 }
 </script>
+</head>
+  
 <body onload="startTime()">
-	
+<div id="txt"></div>	
 <img src="https://avatars1.githubusercontent.com/u/45248034?s=460&v=4"
 <br>
 <div id = "content_header">
@@ -269,6 +270,7 @@ ERP시스템 변경을 중단하라는 지시를 받았습니다.  중단사유�
 <br>
 <br>
 <br>
+</body>
 </html>
 
 
