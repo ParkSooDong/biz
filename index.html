@@ -56,11 +56,12 @@ function startTime() {
   var currYear = currMonth * 12;
   var diffDay = parseInt((diff / currDay) + 1);
   var diffHour = parseInt(diff / 3600000);  
+  var diffMin = parseInt(((diff / 3600000) - diffHour) * 60)
 
   document.getElementById('txt').innerHTML =
   "저는 " + yy + ". " + mm + ". " + dd + "." + yoil + " "
    + h + ":" + m + ":" + s
-   + " 현재 " + diffDay + "일(" + diffHour + "시간)째 在職중입니다.";
+   + " 현재 " + diffDay + "일(" + diffHour + "시간 " + diffMin + "분)째 在職중입니다.";
   var t = setTimeout(startTime, 500);
 }
 function checkTime(i) {
