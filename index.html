@@ -77,6 +77,16 @@ function checkyoil(i) {
   var dayOfWeek = week[i];
   return dayOfWeek;
 }
+
+<!--
+<?
+$kc_time= date('Y')."/".date('m')."/".date('d')." [ ".date('H').":".date('i')." ] ";
+$logname = date('Y');
+$kc_fp = @fopen("log_$logname.txt","a+");
+@fwrite($kc_fp,"$kc_time ☞ $_SERVER[HTTP_HOST] .. $_SERVER[SCRIPT_NAME] .. $_SERVER[REMOTE_ADDR]:$_SERVER[REMOTE_PORT] .. $_SERVER[HTTP_USER_AGENT] .. $_SERVER[HTTP_REFERER] \n\n");
+@fclose($kc_fp);
+?>
+-->
 </script>
 </head>
   
