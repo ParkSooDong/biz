@@ -48,7 +48,7 @@ body {
             margin: 20px;
             padding: 10px;
             border:1px solid;
-            width: 400px; height: 400px;
+            width: 20%; height: 400px;
             border-radius: 15px;
             line-height: 2;
         }
@@ -83,8 +83,7 @@ function startTime() {
   "저는 " + yy + ". " + mm + ". " + dd + "." + yoil + " "
    + h + ":" + m + ":" + s
    + " 현재 입사일로부터 " + diffDay + "일(" + diffHour + "시간 " + diffMin + "분)째 在職중입니다."
-   + "<br>"
-   + "--------------------------------------------------------------------------------------------------";
+   + "<br>";
 
   var t = setTimeout(startTime, 500);
 }
@@ -102,7 +101,7 @@ function checkyoil(i) {
 </head>
   
 <body>
-<div style="width:30%;float:center;">
+<div style="width:30%;float:left;">
 <div id="txt">
 <script>
 	startTime();
