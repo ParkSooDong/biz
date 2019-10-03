@@ -44,11 +44,11 @@ body {
 .section1 {
             display: block;
             position: relative;
-            float: left;
+            float: right;
             margin: 20px;
             padding: 10px;
             border:1px solid;
-            width: 400px; height: 300px;
+            width: 400px; height: 400px;
             border-radius: 15px;
             line-height: 2;
         }
@@ -102,6 +102,18 @@ function checkyoil(i) {
 </head>
   
 <body>
+<div style="float=none;"></div>
+<div id="txt" style="width=100%;float=left;">
+<script>
+	startTime();
+</script>
+</div>
+<br>
+<marquee behavior="slide" dirtection="left" scrollamount="30" onmouseover="this.stop();" onmouseout="this.start();">
+	<img src="https://avatars1.githubusercontent.com/u/45248034?s=460&v=4"></img>
+	<h1>박 수 동</h1>
+</marquee>
+</div>
         <div class="section1">
             <h2 style="text-align:center"> 즐겨 찾기 </h2>
             <P style="font-size:16px; line-height:2">
@@ -152,17 +164,8 @@ function checkyoil(i) {
                 <a class="alink" href="https://www.youtube.com/" target="_blank"><b>유튜브</b></a> <br />
             </P>
         </div>
-<div id="txt"></div>
-<div styl="width:100%;float:none;">
-<script>
-	startTime();
-</script>
-<br>
-<marquee behavior="slide" dirtection="left" scrollamount="30" onmouseover="this.stop();" onmouseout="this.start();">
-	<img src="https://avatars1.githubusercontent.com/u/45248034?s=460&v=4"></img>
-	<h1>박 수 동</h1>
-</marquee>
-</div>
+
+
 <br>
 <div id = "content_header">
 <b>이 웹페이지는 명함에 대한 상세 설명 용도의 개인 웹페이지입니다.</b>
