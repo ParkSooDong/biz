@@ -41,6 +41,17 @@ body {
 	font-size : medium;
 	text-align : justify;
 }
+.section1 {
+            display: block;
+            position: relative;
+            float: left;
+            margin: 20px;
+            padding: 10px;
+            border:1px solid;
+            width: 400px; height: 300px;
+            border-radius: 15px;
+            line-height: 2;
+        }
 </style>
  <script>
 function startTime() {
@@ -91,6 +102,56 @@ function checkyoil(i) {
 </head>
   
 <body onload="startTime()">
+        <div class="section1">
+            <h2 style="text-align:center"> 즐겨 찾기 </h2>
+            <P style="font-size:16px; line-height:2">
+                - <a class="alink" href="https://trends.google.com/trends/" target="_blank"><b>Google Trends</b></a>,
+                <a class="alink" href="https://books.google.com/ngrams" target="_blank"><b>Ngram</b></a> /
+                <a class="alink" href="https://datalab.naver.com/keyword/trendSearch.naver" target="_blank"><b>Naver Trends</b></a>,
+                <a class="alink" href="https://developers.naver.com/main/" target="_blank"><b>datalab</b></a>
+                <br />
+                - <a class="alink" href="https://www.kaggle.com/" target="_blank"><b>Kaggle</b></a> /
+                <a class="alink" href="https://github.com/" target="_blank"><b>GitHub</b></a> /
+                <a class="alink" href="https://www.cia.gov/library/publications/the-world-factbook/" target="_blank"><b>Factbook</b></a> /
+                <a class="alink" href="http://kosis.kr/index/index.do" target="_blank"><b>KOSIS</b></a> /
+                <a class="alink" href="https://www.data.go.kr/" target="_blank"><b>Korea Data</b></a>
+                <br />
+                - <a class="alink" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank"><b>Java</b></a>,
+                <a class="alink" href="https://docs.oracle.com/javase/9/" target="_blank"><b>Documentation</b></a>,
+                <a class="alink" href="https://docs.oracle.com/javase/8/docs/api/index.html" target="_blank"><b>API (8)</b></a> /
+                <a class="alink" href="http://www.eclipse.org/home/index.php" target="_blank"><b>eclipse</b></a>
+                <br />
+                - <a class="alink" href="http://www.w3.org/" target="_blank"><b>W3C</b></a> /
+                <a class="alink" href="http://html5doctor.com/" target="_blank"><b>HTML5</b></a> /
+                <a class="alink" href="http://jquery.com/" target="_blank"><b>jQuery</b></a> /
+                <a class="alink" href="https://nodejs.org/en/" target="_blank"><b>Node.js</b></a> /
+                <a class="alink" href="https://www.javascript.com/" target="_blank"><b>javascript</b></a>
+                <br />
+                - <a class="alink" href="https://www.r-project.org/" target="_blank"><b>R</b></a> /
+                <a class="alink" href="https://www.rstudio.com/" target="_blank"><b>R studio</b></a> /
+                <a class="alink" href="https://developer.microsoft.com/" target="_blank"><b>Microsoft</b></a>,
+                <a class="alink" href="https://www.visualstudio.com/ko/" target="_blank"><b>Visual Studio</b></a>
+                <br />
+                - <a class="alink" href="https://developer.android.com/index.html" target="_blank"><b>Android</b></a> /
+                <a class="alink" href="https://developer.apple.com/" target="_blank"><b>Apple</b></a>,
+                <a class="alink" href="https://swift.org/download/" target="_blank"><b>Swift</b></a> /
+                <a class="alink" href="https://www.kernel.org/" target="_blank"><b>Linux</b></a>,
+                <a class="alink" href="https://getfedora.org/" target="_blank"><b>Fedora</b></a>,
+                <a class="alink" href="https://www.centos.org/" target="_blank"><b>CentOS</b></a>
+                <br />
+                - <a class="alink" href="https://www.khanacademy.org/" target="_blank"><b>KHANACADEMY</b></a> /
+                <a class="alink" href="http://mooc.org/" target="_blank"><b>mooc</b></a> /
+                <a class="alink" href="http://www.kmooc.kr/" target="_blank"><b>K-MOOC</b></a> /
+                <a class="alink" href="https://www.coursera.org/" target="_blank"><b>coursera</b></a> /
+                <a class="alink" href="https://ocw.mit.edu/index.htm" target="_blank"><b>MIT</b></a>
+                <br />
+                - <a class="alink" href="https://www.wikipedia.org/" target="_blank"><b>위키백과(영어)</b></a><a class="alink" href="https://ko.wikipedia.org/" target="_blank"><b>(한글)</b></a>  /
+                <a class="alink" href="https://www.google.co.kr/" target="_blank"><b>구글</b></a> /
+                <a class="alink" href="https://www.naver.com/" target="_blank"><b>네이버</b></a> /
+                <a class="alink" href="https://www.daum.net/" target="_blank"><b>다음</b></a> /
+                <a class="alink" href="https://www.youtube.com/" target="_blank"><b>유튜브</b></a> <br />
+            </P>
+        </div>
 <div id="txt"></div>	
 <br>
 <marquee behavior="slide" dirtection="left" scrollamount="30" onmouseover="this.stop();" onmouseout="this.start();">
